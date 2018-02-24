@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'OnyxCamera_Example' do
+  pod 'OnyxCamera', :path => '../'
+
+  target 'OnyxCamera_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
