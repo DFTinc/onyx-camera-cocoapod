@@ -1,0 +1,16 @@
+PODS:
+  - OnyxCamera (0.1.0)
+
+DEPENDENCIES:
+  - OnyxCamera (from `../`)
+
+EXTERNAL SOURCES:
+  OnyxCamera:
+    :path: ../
+
+SPEC CHECKSUMS:
+  OnyxCamera: 7d6a7e14945f4f6f846777113e5619d48173a44d
+
+PODFILE CHECKSUM: 42d68e3987aa13b72023910919731753024920ac
+
+COCOAPODS: 1.4.0

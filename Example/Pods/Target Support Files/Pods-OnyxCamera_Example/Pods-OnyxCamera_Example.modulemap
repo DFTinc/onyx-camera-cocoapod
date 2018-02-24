@@ -1,0 +1,6 @@
+framework module Pods_OnyxCamera_Example {
+  umbrella header "Pods-OnyxCamera_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

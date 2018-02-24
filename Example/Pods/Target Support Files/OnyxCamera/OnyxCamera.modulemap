@@ -1,0 +1,6 @@
+framework module OnyxCamera {
+  umbrella header "OnyxCamera-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E47A8543F51A127F39191AC3114CEB9 /* Pods-OnyxCamera_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D49302596DE4BFFEE792C30BA56B3C /* Pods-OnyxCamera_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C2E3FC073527ECB0D3E6239D3EA330 /* Pods-OnyxCamera_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 746D683E1E98F7B882BD47DC5EB0D1BF /* Pods-OnyxCamera_Tests-dummy.m */; };
+		4B7245035B0517CE6DF89B4D888C4C0F /* Pods-OnyxCamera_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15AC2CC3EE0242BC3E77B4134B185F9D /* Pods-OnyxCamera_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		626A5138DFE171F014FF186EE4DCEE0F /* OnyxCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06BFF39410B74E3FC5778936C8DA8988 /* OnyxCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AA4AF467CB2FF6EA4A505848BDA120E /* OnyxCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 905ABF976FA53EF1BF60B0AA8CD00517 /* OnyxCamera-dummy.m */; };
+		A2087CB5051FA9771F5D3B6046E1EF22 /* Pods-OnyxCamera_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F3103AF55CB88953487AECA79DD949 /* Pods-OnyxCamera_Example-dummy.m */; };
+		D0D9D23B3F2F920D03AE9336DD204DC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		DC2443252F04709E3A94236899B1241F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		EA1ABF6F3FC04749626323866C3FB0B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D7D631EFD64F12BE33604867566323F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F1FB88AF7BB94A6B83C873A372B3E7E;
+			remoteInfo = OnyxCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06BFF39410B74E3FC5778936C8DA8988 /* OnyxCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OnyxCamera-umbrella.h"; sourceTree = "<group>"; };
+		1532E0BF97EABB4A803168867AB7DABF /* Pods-OnyxCamera_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OnyxCamera_Example.modulemap"; sourceTree = "<group>"; };
+		15AC2CC3EE0242BC3E77B4134B185F9D /* Pods-OnyxCamera_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OnyxCamera_Example-umbrella.h"; sourceTree = "<group>"; };
+		2076121AC1E7D020DB159576469B7B72 /* OnyxCamera.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = OnyxCamera.podspec; sourceTree = "<group>"; };
+		2E0AF756A694B0FE45F0D27C4517229D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3560E8F5F4B54BFA652C9C2015D265FD /* Pods-OnyxCamera_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OnyxCamera_Tests.modulemap"; sourceTree = "<group>"; };
+		363ECB8200A61A9947179DFB32A618B2 /* Pods-OnyxCamera_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OnyxCamera_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		3F241A1BCDC63FE36BEF28DA8E8BFB10 /* Pods-OnyxCamera_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OnyxCamera_Example-resources.sh"; sourceTree = "<group>"; };
+		5673F4C2AFE2E4E95EAF00BF85A979E1 /* OnyxCamera-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OnyxCamera-prefix.pch"; sourceTree = "<group>"; };
+		573A2D6E52EB120392122F57D0D3C9EB /* Pods-OnyxCamera_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OnyxCamera_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		60C15537E864C9C582A32937177C9E3A /* Pods-OnyxCamera_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OnyxCamera_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		61D2294F3F2DDEDEACA08A6BE9C2111F /* Pods-OnyxCamera_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OnyxCamera_Tests-resources.sh"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6678AEE11ED2FD6F882F130DA580E67E /* Pods-OnyxCamera_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OnyxCamera_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6A7FF5C47D02D1F5C441B94A1057A3BF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		746D683E1E98F7B882BD47DC5EB0D1BF /* Pods-OnyxCamera_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OnyxCamera_Tests-dummy.m"; sourceTree = "<group>"; };
+		768F0BB7D9C3AA1E69C08F84A81F085E /* Pods-OnyxCamera_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OnyxCamera_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7A4C84E906D7316196A8B12D62B52D1E /* OnyxCamera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OnyxCamera.xcconfig; sourceTree = "<group>"; };
+		8D52FF9B01BFCD26C6B6F9BC859B37F8 /* Pods_OnyxCamera_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnyxCamera_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		905ABF976FA53EF1BF60B0AA8CD00517 /* OnyxCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OnyxCamera-dummy.m"; sourceTree = "<group>"; };
+		912E12EE682CBB9A634272A1B3B84D2F /* Pods-OnyxCamera_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OnyxCamera_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9AC2B08BDFA60DC99B4FAAE1C7556CA8 /* Pods_OnyxCamera_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnyxCamera_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F4AA0B7BC75AFE169DD133876101A21 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A0384D8152CD2133CBEF9CE664DE65C4 /* Pods-OnyxCamera_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OnyxCamera_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B6D8B6929DD969EB2FA587B9B1576F82 /* Pods-OnyxCamera_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OnyxCamera_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA90AAC2303E5CD0E99D3BF692282FE3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFC8DB64F5145AEF7B47C15267C4F016 /* Pods-OnyxCamera_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OnyxCamera_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C0F3103AF55CB88953487AECA79DD949 /* Pods-OnyxCamera_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OnyxCamera_Example-dummy.m"; sourceTree = "<group>"; };
+		C3D4EA29C440ECFA64D9665634B08BF1 /* OnyxCamera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OnyxCamera.modulemap; sourceTree = "<group>"; };
+		D3D49302596DE4BFFEE792C30BA56B3C /* Pods-OnyxCamera_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OnyxCamera_Tests-umbrella.h"; sourceTree = "<group>"; };
+		DF14E48410563C5DC53E5C71F38FEE05 /* Pods-OnyxCamera_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OnyxCamera_Example-frameworks.sh"; sourceTree = "<group>"; };
+		E31E0461335AF35610490C4EFBAA2F6B /* OnyxCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnyxCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE23F9212030AC1905CA3AA382A950DE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60301B3AD303F455B81969DA8D849F05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC2443252F04709E3A94236899B1241F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D6B418DA7FA600243EB12876BDE839 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D9D23B3F2F920D03AE9336DD204DC4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F0487D7D4287CD65AD8F5C3E591C72F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1ABF6F3FC04749626323866C3FB0B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05791F603F8B246235E8F9EC5C548418 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0EE259B7E8431165028D49BAB11BCC7 /* Pods-OnyxCamera_Example */,
+				D33179F71AE1476BE076DB7E213FB42D /* Pods-OnyxCamera_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0DA7B6C88E1959383BFAB3E9DA67305C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				9F4AA0B7BC75AFE169DD133876101A21 /* LICENSE */,
+				2076121AC1E7D020DB159576469B7B72 /* OnyxCamera.podspec */,
+				6A7FF5C47D02D1F5C441B94A1057A3BF /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		680BB0E6C07CAC2249D9EE2EF6CAA164 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E31E0461335AF35610490C4EFBAA2F6B /* OnyxCamera.framework */,
+				8D52FF9B01BFCD26C6B6F9BC859B37F8 /* Pods_OnyxCamera_Example.framework */,
+				9AC2B08BDFA60DC99B4FAAE1C7556CA8 /* Pods_OnyxCamera_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71E42E4327E93D36A003D0404EDD2C3B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E0AF756A694B0FE45F0D27C4517229D /* Info.plist */,
+				C3D4EA29C440ECFA64D9665634B08BF1 /* OnyxCamera.modulemap */,
+				7A4C84E906D7316196A8B12D62B52D1E /* OnyxCamera.xcconfig */,
+				905ABF976FA53EF1BF60B0AA8CD00517 /* OnyxCamera-dummy.m */,
+				5673F4C2AFE2E4E95EAF00BF85A979E1 /* OnyxCamera-prefix.pch */,
+				06BFF39410B74E3FC5778936C8DA8988 /* OnyxCamera-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/OnyxCamera";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				9BA307E1475CD9F98881DD198B132501 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				680BB0E6C07CAC2249D9EE2EF6CAA164 /* Products */,
+				05791F603F8B246235E8F9EC5C548418 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8ED982F98A9ABEA0E62BBFC6049F6464 /* OnyxCamera */ = {
+			isa = PBXGroup;
+			children = (
+				0DA7B6C88E1959383BFAB3E9DA67305C /* Pod */,
+				71E42E4327E93D36A003D0404EDD2C3B /* Support Files */,
+			);
+			name = OnyxCamera;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		9BA307E1475CD9F98881DD198B132501 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8ED982F98A9ABEA0E62BBFC6049F6464 /* OnyxCamera */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0EE259B7E8431165028D49BAB11BCC7 /* Pods-OnyxCamera_Example */ = {
+			isa = PBXGroup;
+			children = (
+				EE23F9212030AC1905CA3AA382A950DE /* Info.plist */,
+				1532E0BF97EABB4A803168867AB7DABF /* Pods-OnyxCamera_Example.modulemap */,
+				6678AEE11ED2FD6F882F130DA580E67E /* Pods-OnyxCamera_Example-acknowledgements.markdown */,
+				60C15537E864C9C582A32937177C9E3A /* Pods-OnyxCamera_Example-acknowledgements.plist */,
+				C0F3103AF55CB88953487AECA79DD949 /* Pods-OnyxCamera_Example-dummy.m */,
+				DF14E48410563C5DC53E5C71F38FEE05 /* Pods-OnyxCamera_Example-frameworks.sh */,
+				3F241A1BCDC63FE36BEF28DA8E8BFB10 /* Pods-OnyxCamera_Example-resources.sh */,
+				15AC2CC3EE0242BC3E77B4134B185F9D /* Pods-OnyxCamera_Example-umbrella.h */,
+				912E12EE682CBB9A634272A1B3B84D2F /* Pods-OnyxCamera_Example.debug.xcconfig */,
+				A0384D8152CD2133CBEF9CE664DE65C4 /* Pods-OnyxCamera_Example.release.xcconfig */,
+			);
+			name = "Pods-OnyxCamera_Example";
+			path = "Target Support Files/Pods-OnyxCamera_Example";
+			sourceTree = "<group>";
+		};
+		D33179F71AE1476BE076DB7E213FB42D /* Pods-OnyxCamera_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BA90AAC2303E5CD0E99D3BF692282FE3 /* Info.plist */,
+				3560E8F5F4B54BFA652C9C2015D265FD /* Pods-OnyxCamera_Tests.modulemap */,
+				BFC8DB64F5145AEF7B47C15267C4F016 /* Pods-OnyxCamera_Tests-acknowledgements.markdown */,
+				768F0BB7D9C3AA1E69C08F84A81F085E /* Pods-OnyxCamera_Tests-acknowledgements.plist */,
+				746D683E1E98F7B882BD47DC5EB0D1BF /* Pods-OnyxCamera_Tests-dummy.m */,
+				363ECB8200A61A9947179DFB32A618B2 /* Pods-OnyxCamera_Tests-frameworks.sh */,
+				61D2294F3F2DDEDEACA08A6BE9C2111F /* Pods-OnyxCamera_Tests-resources.sh */,
+				D3D49302596DE4BFFEE792C30BA56B3C /* Pods-OnyxCamera_Tests-umbrella.h */,
+				B6D8B6929DD969EB2FA587B9B1576F82 /* Pods-OnyxCamera_Tests.debug.xcconfig */,
+				573A2D6E52EB120392122F57D0D3C9EB /* Pods-OnyxCamera_Tests.release.xcconfig */,
+			);
+			name = "Pods-OnyxCamera_Tests";
+			path = "Target Support Files/Pods-OnyxCamera_Tests";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01462FD1E93C265FFEB642EF1B282157 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				626A5138DFE171F014FF186EE4DCEE0F /* OnyxCamera-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8157657B740FCB05924E5341ED189012 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B7245035B0517CE6DF89B4D888C4C0F /* Pods-OnyxCamera_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B893DACBD69FA461A8A97CD1BD259183 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E47A8543F51A127F39191AC3114CEB9 /* Pods-OnyxCamera_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		222628BC4FAD945136868B79AB904572 /* Pods-OnyxCamera_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAFA6540CC87A7C3C04D5E9EF5B95DE9 /* Build configuration list for PBXNativeTarget "Pods-OnyxCamera_Tests" */;
+			buildPhases = (
+				74CFBDDE4B42EFE121B07E0934E0A385 /* Sources */,
+				8F0487D7D4287CD65AD8F5C3E591C72F /* Frameworks */,
+				B893DACBD69FA461A8A97CD1BD259183 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-OnyxCamera_Tests";
+			productName = "Pods-OnyxCamera_Tests";
+			productReference = 9AC2B08BDFA60DC99B4FAAE1C7556CA8 /* Pods_OnyxCamera_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		32BA6D204E00413DA11ED3605C448902 /* Pods-OnyxCamera_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CCA3D7CE0DF027D7C987F88930CC504 /* Build configuration list for PBXNativeTarget "Pods-OnyxCamera_Example" */;
+			buildPhases = (
+				A7209650942343F944EE7F3620F623C5 /* Sources */,
+				88D6B418DA7FA600243EB12876BDE839 /* Frameworks */,
+				8157657B740FCB05924E5341ED189012 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD7B4F892108E85BDE258F34EA4C5BB3 /* PBXTargetDependency */,
+			);
+			name = "Pods-OnyxCamera_Example";
+			productName = "Pods-OnyxCamera_Example";
+			productReference = 8D52FF9B01BFCD26C6B6F9BC859B37F8 /* Pods_OnyxCamera_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7F1FB88AF7BB94A6B83C873A372B3E7E /* OnyxCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4D392823EBFB411EBCCD62099A2B2A4 /* Build configuration list for PBXNativeTarget "OnyxCamera" */;
+			buildPhases = (
+				CF7941E8FC4760DB881CC4ACDCAB0D5F /* Sources */,
+				60301B3AD303F455B81969DA8D849F05 /* Frameworks */,
+				01462FD1E93C265FFEB642EF1B282157 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnyxCamera;
+			productName = OnyxCamera;
+			productReference = E31E0461335AF35610490C4EFBAA2F6B /* OnyxCamera.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 680BB0E6C07CAC2249D9EE2EF6CAA164 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F1FB88AF7BB94A6B83C873A372B3E7E /* OnyxCamera */,
+				32BA6D204E00413DA11ED3605C448902 /* Pods-OnyxCamera_Example */,
+				222628BC4FAD945136868B79AB904572 /* Pods-OnyxCamera_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74CFBDDE4B42EFE121B07E0934E0A385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37C2E3FC073527ECB0D3E6239D3EA330 /* Pods-OnyxCamera_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7209650942343F944EE7F3620F623C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2087CB5051FA9771F5D3B6046E1EF22 /* Pods-OnyxCamera_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7941E8FC4760DB881CC4ACDCAB0D5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA4AF467CB2FF6EA4A505848BDA120E /* OnyxCamera-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD7B4F892108E85BDE258F34EA4C5BB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OnyxCamera;
+			target = 7F1FB88AF7BB94A6B83C873A372B3E7E /* OnyxCamera */;
+			targetProxy = 5D7D631EFD64F12BE33604867566323F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1626549BBDC4950451AE9D89AE6ABE7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6D8B6929DD969EB2FA587B9B1576F82 /* Pods-OnyxCamera_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OnyxCamera_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OnyxCamera_Tests/Pods-OnyxCamera_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OnyxCamera_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3D4DF9F4E8AB2AA6378428C32592C38D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A4C84E906D7316196A8B12D62B52D1E /* OnyxCamera.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OnyxCamera/OnyxCamera-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OnyxCamera/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OnyxCamera/OnyxCamera.modulemap";
+				PRODUCT_NAME = OnyxCamera;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		557640D5A7E50DB9E2B11319BDE1EBCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 912E12EE682CBB9A634272A1B3B84D2F /* Pods-OnyxCamera_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OnyxCamera_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OnyxCamera_Example/Pods-OnyxCamera_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OnyxCamera_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		827269710C98D60C14D46BC6AF9BF728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C12AE8B9F92ACD58949D6C163CC30BDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 573A2D6E52EB120392122F57D0D3C9EB /* Pods-OnyxCamera_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OnyxCamera_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OnyxCamera_Tests/Pods-OnyxCamera_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OnyxCamera_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CB76A52EFD46136682B76AEBD8334B91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0384D8152CD2133CBEF9CE664DE65C4 /* Pods-OnyxCamera_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OnyxCamera_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OnyxCamera_Example/Pods-OnyxCamera_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OnyxCamera_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E90051DEA7BEB59A3BAC1A3C9AE76641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A4C84E906D7316196A8B12D62B52D1E /* OnyxCamera.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OnyxCamera/OnyxCamera-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OnyxCamera/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OnyxCamera/OnyxCamera.modulemap";
+				PRODUCT_NAME = OnyxCamera;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */,
+				827269710C98D60C14D46BC6AF9BF728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CCA3D7CE0DF027D7C987F88930CC504 /* Build configuration list for PBXNativeTarget "Pods-OnyxCamera_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557640D5A7E50DB9E2B11319BDE1EBCE /* Debug */,
+				CB76A52EFD46136682B76AEBD8334B91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4D392823EBFB411EBCCD62099A2B2A4 /* Build configuration list for PBXNativeTarget "OnyxCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D4DF9F4E8AB2AA6378428C32592C38D /* Debug */,
+				E90051DEA7BEB59A3BAC1A3C9AE76641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAFA6540CC87A7C3C04D5E9EF5B95DE9 /* Build configuration list for PBXNativeTarget "Pods-OnyxCamera_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1626549BBDC4950451AE9D89AE6ABE7C /* Debug */,
+				C12AE8B9F92ACD58949D6C163CC30BDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

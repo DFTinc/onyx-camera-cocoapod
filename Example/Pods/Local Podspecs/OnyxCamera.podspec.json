@@ -1,0 +1,22 @@
+{
+  "name": "OnyxCamera",
+  "version": "0.1.0",
+  "summary": "A short description of OnyxCamera.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mjwheatley/OnyxCamera",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mjwheatley": "mwheatley@diamondfortress.com"
+  },
+  "source": {
+    "git": "https://github.com/mjwheatley/OnyxCamera.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "OnyxCamera/Classes/**/*"
+}

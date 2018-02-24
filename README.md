@@ -26,4 +26,4 @@ mjwheatley, mwheatley@diamondfortress.com
 
 ## License
 
-OnyxCamera is available under the MIT license. See the LICENSE file for more info.
+OnyxCamera is available under license agreement with Diamond Fortress Technologies, In. See the LICENSE file for more info.
