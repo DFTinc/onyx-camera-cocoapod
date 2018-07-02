@@ -7,33 +7,20 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'OnyxCamera'
-  s.version          = '0.0.1'
-  s.summary          = 'Onyx SDK CocoaPod for iOS.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = 'Onyx software development kit for iOS distributed via CocoaPods'
-
-  s.homepage         = 'https://github.com/DFTinc/onyx-camera-cocoapod'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'custom', :file => 'LICENSE' }
-  s.author           = { 'mjwheatley' => 'mwheatley@diamondfortress.com' }
-  s.source           = { :git => 'https://github.com/DFTinc/onyx-camera-cocoapod.git', :tag => s.version.to_s }
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'OnyxCamera/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'OnyxCamera' => ['OnyxCamera/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.name                    = 'OnyxCamera'
+  s.version                 = '5.0.0'
+  s.summary                 = 'Onyx SDK CocoaPod for iOS.'
+  s.description             = 'Onyx software development kit for iOS distributed via CocoaPods'
+  s.homepage                = 'https://github.com/DFTinc/onyx-camera-cocoapod'
+  s.license                 = { :type => 'custom', :file => 'LICENSE' }
+  s.author                  = { 'mjwheatley' => 'mwheatley@diamondfortress.com' }
+  s.source                  = { :git => 'https://github.com/DFTinc/onyx-camera-cocoapod.git', :tag => s.version.to_s }
+  s.ios.deployment_target   = '8.0'
+  s.requires_arc            = true
+  s.xcconfig                = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
+  s.pod_target_xcconfig     = { 'ENABLE_BITCODE' => 'NO', 'OTHER_LDFLAGS' => '-lObjC' }
+  s.resource_bundles        = { 'OnyxCamera' => ['OnyxCamera/Assets/*.*'] }
+  s.ios.vendored_frameworks = 'OnyxCamera/Frameworks/*.framework'
+  s.frameworks              = 'CoreMedia', 'AVFoundation', 'AssetsLibrary'
+  s.dependency                'OpenCV', '~> 3.4'
 end
