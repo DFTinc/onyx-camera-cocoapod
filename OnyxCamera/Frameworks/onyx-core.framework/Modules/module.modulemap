@@ -1,0 +1,15 @@
+framework module onyx-core {
+    header "CaptureUtils.h"
+    header "core.h"
+    header "DftException.h"
+    header "finger-detect.h"
+    header "Finger.h"
+    header "FingerprintTemplate.h"
+    header "focus.h"
+    header "MatchResult.h"
+    header "NbisUtils.h"
+    header "stft.h"
+    header "Version.h"
+    export *
+    module * { export * }
+}
