@@ -1,4 +1,4 @@
-framework module onyx-core {
+framework module OnyxCore {
     header "CaptureUtils.h"
     header "core.h"
     header "DftException.h"
@@ -10,6 +10,4 @@ framework module onyx-core {
     header "NbisUtils.h"
     header "stft.h"
     header "Version.h"
-    export *
-    module * { export * }
 }
