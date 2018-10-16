@@ -1,4 +1,4 @@
-framework module onyx-core {
+framework module OnyxCamera {
     header "CaptureMetrics.h"
     header "NetworkReachability.h"
     header "NetworkUtil.h"
@@ -12,6 +12,4 @@ framework module onyx-core {
     header "OnyxResult.h"
     header "OnyxViewController.h"
     header "ProcessedFingerprint.h"
-    export *
-    module * { export * }
 }
