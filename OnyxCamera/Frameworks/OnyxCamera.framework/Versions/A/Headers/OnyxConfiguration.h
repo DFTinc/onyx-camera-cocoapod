@@ -131,7 +131,17 @@
 /**
  * This method sets the method of capture to be a manual capture of the fingerprint
  */
-@property bool manualCapture;
+@property bool useManualCapture;
+
+/**
+ * This property determines if the manual capture text will be displayed or not
+ */
+@property bool showManualCaptureText;
+
+/**
+ * Instructions to display for manual capture (localization)
+ */
+@property NSString* manualCaptureText;
 
 /**
  * This method sets whether to use remote storage as part of the configuration
@@ -169,6 +179,26 @@
  * Overrides the reticle orientation to use the angle passed in to reticleAngle
  */
 @property bool overrideReticleOrientation;
+
+/**
+ * Text to display for the back button (localization)
+ */
+@property NSString* backButtonText;
+
+/**
+ * Custom text to display on capture screen
+ */
+@property NSString* infoText;
+
+/**
+ * Text color for custom information as a hex string value
+ */
+@property NSString* infoTextColorHexString;
+
+/**
+ * Image URI to display
+ */
+@property NSString* base64ImageData;
 
 /**
  * This sets the OnyxSuccess event handler.
