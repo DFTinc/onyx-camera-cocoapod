@@ -134,6 +134,21 @@
 -(OnyxConfigurationBuilder*(^)(bool))setUseFlash;
 
 /**
+ * This method sets the capture mode on (true) or off (false)
+ */
+-(OnyxConfigurationBuilder*(^)(bool))setUseManualCapture;
+
+/**
+ * This method sets whether or not to show the manual capture text
+ */
+-(OnyxConfigurationBuilder*(^)(bool))setShowManualCaptureText;
+
+/**
+ * This method sets the text to display for manual capture (localization)
+ */
+-(OnyxConfigurationBuilder*(^)(NSString*))setManualCaptureText;
+
+/**
  * This method sets the {@link com.dft.onyxcamera.ui.reticles.Reticle.Orientation}
  */
 -(OnyxConfigurationBuilder*(^)(ReticleOrientation))setReticleOrientation;
@@ -150,6 +165,26 @@
  */
 //todo
 -(OnyxConfigurationBuilder*(^)(float))setReticleScale;
+
+/**
+ * This method sets the text to use for the back button (localization)
+ */
+-(OnyxConfigurationBuilder*(^)(NSString*))setBackButtonText;
+
+/**
+ * This method sets the customer information text to be displayed on the capture screen.
+ */
+-(OnyxConfigurationBuilder*(^)(NSString*))setInfoText;
+
+/**
+ * This method sets the text color to use for the custom information
+ */
+-(OnyxConfigurationBuilder*(^)(NSString*))setInfoTextColorHexString;
+
+/**
+ * This method sets the image data to be displayed on the capture screen
+ */
+-(OnyxConfigurationBuilder*(^)(NSString*))setBase64ImageData;
 
 /**
  * This sets the OnyxSuccess event handler.
