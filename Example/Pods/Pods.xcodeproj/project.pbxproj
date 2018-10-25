@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0E47A8543F51A127F39191AC3114CEB9 /* Pods-OnyxCamera_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D49302596DE4BFFEE792C30BA56B3C /* Pods-OnyxCamera_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D8D308720EAA5E2004CFF02 /* OnyxCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8D308520EAA5E2004CFF02 /* OnyxCamera.framework */; };
-		2D8D308820EAA5E2004CFF02 /* onyx-core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8D308620EAA5E2004CFF02 /* onyx-core.framework */; };
+		2D9C9DD4218265EE00BFE9AA /* onyx-core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9C9DD2218265EE00BFE9AA /* onyx-core.framework */; };
+		2D9C9DD5218265EE00BFE9AA /* OnyxCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9C9DD3218265EE00BFE9AA /* OnyxCamera.framework */; };
 		37C2E3FC073527ECB0D3E6239D3EA330 /* Pods-OnyxCamera_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 746D683E1E98F7B882BD47DC5EB0D1BF /* Pods-OnyxCamera_Tests-dummy.m */; };
 		4B7245035B0517CE6DF89B4D888C4C0F /* Pods-OnyxCamera_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15AC2CC3EE0242BC3E77B4134B185F9D /* Pods-OnyxCamera_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		626A5138DFE171F014FF186EE4DCEE0F /* OnyxCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06BFF39410B74E3FC5778936C8DA8988 /* OnyxCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,9 +35,8 @@
 		1532E0BF97EABB4A803168867AB7DABF /* Pods-OnyxCamera_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OnyxCamera_Example.modulemap"; sourceTree = "<group>"; };
 		15AC2CC3EE0242BC3E77B4134B185F9D /* Pods-OnyxCamera_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OnyxCamera_Example-umbrella.h"; sourceTree = "<group>"; };
 		2076121AC1E7D020DB159576469B7B72 /* OnyxCamera.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = OnyxCamera.podspec; sourceTree = "<group>"; };
-		2D8D308520EAA5E2004CFF02 /* OnyxCamera.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OnyxCamera.framework; path = ../OnyxCamera/Frameworks/OnyxCamera.framework; sourceTree = "<group>"; };
-		2D8D308620EAA5E2004CFF02 /* onyx-core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "onyx-core.framework"; path = "../OnyxCamera/Frameworks/onyx-core.framework"; sourceTree = "<group>"; };
-		2D8D308920EAA817004CFF02 /* white_onyx embossed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "white_onyx embossed.png"; path = "OnyxCamera/Assets/white_onyx embossed.png"; sourceTree = "<group>"; };
+		2D9C9DD2218265EE00BFE9AA /* onyx-core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "onyx-core.framework"; sourceTree = "<group>"; };
+		2D9C9DD3218265EE00BFE9AA /* OnyxCamera.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OnyxCamera.framework; sourceTree = "<group>"; };
 		2E0AF756A694B0FE45F0D27C4517229D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3560E8F5F4B54BFA652C9C2015D265FD /* Pods-OnyxCamera_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OnyxCamera_Tests.modulemap"; sourceTree = "<group>"; };
 		363ECB8200A61A9947179DFB32A618B2 /* Pods-OnyxCamera_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OnyxCamera_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -76,8 +75,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC2443252F04709E3A94236899B1241F /* Foundation.framework in Frameworks */,
-				2D8D308720EAA5E2004CFF02 /* OnyxCamera.framework in Frameworks */,
-				2D8D308820EAA5E2004CFF02 /* onyx-core.framework in Frameworks */,
+				2D9C9DD4218265EE00BFE9AA /* onyx-core.framework in Frameworks */,
+				2D9C9DD5218265EE00BFE9AA /* OnyxCamera.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,13 +118,14 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		2D8D308420EAA5BA004CFF02 /* Frameworks */ = {
+		2D9C9DC921825EB500BFE9AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2D8D308620EAA5E2004CFF02 /* onyx-core.framework */,
-				2D8D308520EAA5E2004CFF02 /* OnyxCamera.framework */,
+				2D9C9DD2218265EE00BFE9AA /* onyx-core.framework */,
+				2D9C9DD3218265EE00BFE9AA /* OnyxCamera.framework */,
 			);
-			path = Frameworks;
+			name = Frameworks;
+			path = OnyxCamera/Frameworks;
 			sourceTree = "<group>";
 		};
 		680BB0E6C07CAC2249D9EE2EF6CAA164 /* Products */ = {
@@ -166,8 +166,7 @@
 		8ED982F98A9ABEA0E62BBFC6049F6464 /* OnyxCamera */ = {
 			isa = PBXGroup;
 			children = (
-				2D8D308920EAA817004CFF02 /* white_onyx embossed.png */,
-				2D8D308420EAA5BA004CFF02 /* Frameworks */,
+				2D9C9DC921825EB500BFE9AA /* Frameworks */,
 				0DA7B6C88E1959383BFAB3E9DA67305C /* Pod */,
 				71E42E4327E93D36A003D0404EDD2C3B /* Support Files */,
 			);
