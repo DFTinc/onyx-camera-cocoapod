@@ -33,6 +33,7 @@
 @property OnyxResult* onyxResult;
 
 extern NSString * const IMAGE_URI_PREFIX;
+extern NSString * const ONYX_ICON_IMAGE_DATA;
 
 -(void)doSetup:(OnyxConfiguration*)onyxConfig;
 -(void)capture:(UIViewController*)viewController;
