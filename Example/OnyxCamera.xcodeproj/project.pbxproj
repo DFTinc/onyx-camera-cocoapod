@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		2AD42F16AB149FAA74FE4FFE /* Pods_OnyxCamera_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnyxCamera_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D06981A057024F1A88D8FA1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4D06981A057024F1A88D8FA1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* OnyxCamera_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnyxCamera_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,13 +60,13 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6448606CCE90B44EE17813CC /* Pods-OnyxCamera_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnyxCamera_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnyxCamera_Tests/Pods-OnyxCamera_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6FD309D1426B6C78E6CA7363 /* Pods-OnyxCamera_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnyxCamera_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnyxCamera_Tests/Pods-OnyxCamera_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		706C29A983EDE55BDC6AFA71 /* OnyxCamera.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = OnyxCamera.podspec; path = ../OnyxCamera.podspec; sourceTree = "<group>"; };
+		706C29A983EDE55BDC6AFA71 /* OnyxCamera.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OnyxCamera.podspec; path = ../OnyxCamera.podspec; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7423BB46D4EF0DA70DAB406D /* Pods_OnyxCamera_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnyxCamera_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B53A0190569473D96DC700F5 /* Pods-OnyxCamera_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnyxCamera_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnyxCamera_Example/Pods-OnyxCamera_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EFF2F45C188494FAF966CF88 /* Pods-OnyxCamera_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnyxCamera_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnyxCamera_Example/Pods-OnyxCamera_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FDABFA86765276AA39CEA340 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FDABFA86765276AA39CEA340 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +250,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = mjwheatley;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = SK8JVNSJE9;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -533,6 +536,7 @@
 			baseConfigurationReference = EFF2F45C188494FAF966CF88 /* Pods-OnyxCamera_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SK8JVNSJE9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OnyxCamera/OnyxCamera-Prefix.pch";
 				INFOPLIST_FILE = "OnyxCamera/OnyxCamera-Info.plist";
@@ -548,6 +552,7 @@
 			baseConfigurationReference = B53A0190569473D96DC700F5 /* Pods-OnyxCamera_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SK8JVNSJE9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OnyxCamera/OnyxCamera-Prefix.pch";
 				INFOPLIST_FILE = "OnyxCamera/OnyxCamera-Info.plist";
