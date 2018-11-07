@@ -94,13 +94,7 @@
  * This method sets the rotation amount for the image.
  * only 90 degree rotations are supported for speed reasons.
  */
-//todo
 -(OnyxConfigurationBuilder*(^)(int))setImageRotation;
-
-/**
- * This method sets whether or not the capture task should flip the fingerprint image.
- */
--(OnyxConfigurationBuilder*(^)(Flip))setFlip;
 
 /**
  * This method sets whether or not to set the crop to the whole finger.

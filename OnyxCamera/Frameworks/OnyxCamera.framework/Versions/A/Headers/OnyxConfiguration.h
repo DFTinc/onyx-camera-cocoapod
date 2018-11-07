@@ -90,11 +90,6 @@
 @property bool shouldConvertToISOTemplate;
 
 /**
- * This method sets whether or not the capture task should flip the fingerprint image.
- */
-@property Flip flip;
-
-/**
  * This method sets the rotation amount for the image.
  * rotation an integer specifying the rotation amount (0, 90, 180, or 270 degrees).
  * only 90 degree rotations are supported for speed reasons.

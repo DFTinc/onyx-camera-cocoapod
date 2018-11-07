@@ -20,9 +20,13 @@
  */
 @property UIImage *sourceImage;
 /*!
- * @brief The grayscale source image.
+ * @brief The cropped raw image.
  */
-@property UIImage *graySourceImage;
+@property UIImage *rawImage;
+/*!
+ * @brief The grayscale raw image.
+ */
+@property UIImage *grayRawImage;
 /*!
  * @brief The processed image.
  */

@@ -5,6 +5,10 @@
 //  Created by Matthew Wheatley on 9/27/17.
 //  Copyright © 2017 Diamond Fortress. All rights reserved.
 //
+#ifdef __cplusplus
+#import <opencv2/core.hpp>
+#import <opencv2/imgcodecs/ios.h>
+#endif
 
 #import <UIKit/UIKit.h>
 #import "OnyxConfiguration.h"
