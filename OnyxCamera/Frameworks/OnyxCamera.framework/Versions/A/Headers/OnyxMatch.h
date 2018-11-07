@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 
 @interface OnyxMatch : NSObject
@@ -20,6 +21,17 @@
  * @return a match score [0, 1] 0.1 is acceptable. 
  */
 + (double) match:(NSData *)d1 with:(NSData *)d2;
+
+/*!
+ * This function will attempt to match a WSQ Image to a fingerprint template by scaling the WSQ Image
+ * @author Matthew Wheatley
+ *
+ * @param referenceData template data of the reference fingerprint
+ * @param wsqData data for the WSQ Image to match against the reference template
+ * @param scales aray of float values to scale the WSQ image
+ * @return a match score [0, 1] 0.1 is acceptable.
+ */
++ (double) pyramidMatch:(NSData *)referenceData withImage:(UIImage *)probeImage scales:(NSArray *) scaleArray;
 
 /*!
  * Get FingerprintTemplate from NSData

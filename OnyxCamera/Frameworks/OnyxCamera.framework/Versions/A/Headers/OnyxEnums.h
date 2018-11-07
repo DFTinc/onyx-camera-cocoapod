@@ -73,9 +73,9 @@ typedef enum ReticleOrientation {
     RIGHT
 } ReticleOrientation;
 
-typedef enum Flip {
-    HORIZONTAL,
-    VERTICAL,
-    BOTH,
-    NONE
-} Flip;
+typedef enum ImageRotation {
+    ROTATE_NONE = 0,
+    ROTATE_90_COUNTER_CLOCKWISE = 90,
+    ROTATE_180 = 180,
+    ROTATE_90_CLOCKWISE = 270 // 270
+} ImageRotation;

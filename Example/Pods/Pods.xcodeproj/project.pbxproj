@@ -34,7 +34,7 @@
 		06BFF39410B74E3FC5778936C8DA8988 /* OnyxCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OnyxCamera-umbrella.h"; sourceTree = "<group>"; };
 		1532E0BF97EABB4A803168867AB7DABF /* Pods-OnyxCamera_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OnyxCamera_Example.modulemap"; sourceTree = "<group>"; };
 		15AC2CC3EE0242BC3E77B4134B185F9D /* Pods-OnyxCamera_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OnyxCamera_Example-umbrella.h"; sourceTree = "<group>"; };
-		2076121AC1E7D020DB159576469B7B72 /* OnyxCamera.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = OnyxCamera.podspec; sourceTree = "<group>"; };
+		2076121AC1E7D020DB159576469B7B72 /* OnyxCamera.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = OnyxCamera.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2D9C9DD2218265EE00BFE9AA /* onyx-core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "onyx-core.framework"; sourceTree = "<group>"; };
 		2D9C9DD3218265EE00BFE9AA /* OnyxCamera.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OnyxCamera.framework; sourceTree = "<group>"; };
 		2E0AF756A694B0FE45F0D27C4517229D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };

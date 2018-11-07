@@ -5,6 +5,9 @@
 //  Created by Devan Buggay on 6/16/14.
 //  Copyright (c) 2014 dft. All rights reserved.
 //
+#ifdef __cplusplus
+#import <opencv2/imgcodecs/ios.h>
+#endif
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
