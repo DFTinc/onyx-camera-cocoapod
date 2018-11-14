@@ -9,7 +9,7 @@
 namespace dft
 {
 
-Finger findFingerImpl(const cv::Mat& src);
+Finger findFingerImpl(const cv::Mat& src, int detectMode = 1);
 
 }
 

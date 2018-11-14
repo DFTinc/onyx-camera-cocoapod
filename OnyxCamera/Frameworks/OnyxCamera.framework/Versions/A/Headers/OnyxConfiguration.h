@@ -72,12 +72,6 @@
  */
 @property bool returnGrayRawWsq;
 
-
-/**
- * This method sets whether or not the capture task should invert the fingerprint image.
- */
-@property bool shouldInvert;
-
 /**
  * This method sets whether or not the capture task should segment the fingerprint image.
  */
@@ -122,11 +116,15 @@
  */
 @property LayoutPreference layoutPreference;
 
-
 /**
  * This method sets the method of capture to be a manual capture of the fingerprint
  */
 @property bool useManualCapture;
+
+/**
+ * This method indicates which finger detect mode to use.
+ */
+@property FingerDetectMode fingerDetectMode;
 
 /**
  * This property determines if the manual capture text will be displayed or not

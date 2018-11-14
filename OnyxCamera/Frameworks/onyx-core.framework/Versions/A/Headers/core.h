@@ -93,9 +93,10 @@ MatchResult pyramidIdentify(const std::vector<FingerprintTemplate>& gallery, con
 
 /// This member locates a fingertip in a grayscale image.
 /// \param[in] src the 8-bit grayscale image possibly containing a finger.
+/// \param[in] detectMode 0 means dead finger mode, 1 means alive finger mode.
 /// \return a Finger object containing the location of the finger as well as its contour.
 /// \throws DftException if an error occurs.
-Finger findFinger(const cv::Mat& src);
+Finger findFinger(const cv::Mat& src, int detectMode = 1);
 
 /// This member function analyzes the fingertip focus.
 /// \param[in] src the 8-bit grayscale image to analyze for focus.
