@@ -73,11 +73,6 @@
 -(OnyxConfigurationBuilder*(^)(bool))setReturnGrayRawWSQ;
 
 /**
- * This method sets whether or not the capture task should invert the fingerprint image.
- */
--(OnyxConfigurationBuilder*(^)(bool))setShouldInvert;
-
-/**
  * This method sets whether or not the capture task should segment the fingerprint image.
  */
 //todo
@@ -179,6 +174,11 @@
  * This method sets the image data to be displayed on the capture screen
  */
 -(OnyxConfigurationBuilder*(^)(NSString*))setBase64ImageData;
+
+/**
+ * This method sets the finger detect mode.
+ */
+-(OnyxConfigurationBuilder*(^)(FingerDetectMode))setFingerDetectMode;
 
 /**
  * This sets the OnyxSuccess event handler.

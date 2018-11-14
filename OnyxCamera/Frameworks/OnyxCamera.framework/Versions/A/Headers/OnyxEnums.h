@@ -79,3 +79,8 @@ typedef enum ImageRotation {
     ROTATE_180 = 180,
     ROTATE_90_CLOCKWISE = 270 // 270
 } ImageRotation;
+
+typedef enum FingerDetectMode {
+    DEAD_FINGER,
+    LIVE_FINGER
+} FingerDetectMode;
