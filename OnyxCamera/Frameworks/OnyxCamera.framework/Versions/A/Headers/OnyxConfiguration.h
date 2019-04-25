@@ -78,10 +78,9 @@
 @property bool shouldSegment;
 
 /**
- * This method sets whether or not the capture task should convert the fingerprint template
- * to an ISO Template.
+ * This property sets whether or not to return the ISO fingerprint template in the OnyxResult
  */
-@property bool shouldConvertToISOTemplate;
+@property bool returnISOFingerprintTemplate;
 
 /**
  * This method sets the rotation amount for the image.

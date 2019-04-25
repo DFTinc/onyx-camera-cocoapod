@@ -19,6 +19,7 @@
 @property NSData* wsqData;
 @property NSData* grayRawWsqData;
 @property NSData* fingerprintTemplate;
+@property NSData* ISOFingerprintTemplate;
 @property CaptureMetrics* captureMetrics;
 
 - (UIImage*) getGrayRawFingerprintImage;
@@ -36,6 +37,8 @@
 - (NSData*) getGrayRawWsqData;
 
 - (NSData*) getFingerprintTemplate;
+
+- (NSData*) getISOFingerprintTemplate;
 
 - (CaptureMetrics*) getMetrics;
 

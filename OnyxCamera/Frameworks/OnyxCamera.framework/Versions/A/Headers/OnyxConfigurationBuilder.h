@@ -79,11 +79,9 @@
 -(OnyxConfigurationBuilder*(^)(bool))setShouldSegment;
 
 /**
- * This method sets whether or not the capture task should convert the FingerprintTemplate
- * to an ISO Template
+ * This method sets whether or not to return ISO figneprint tempalte in the OnyxResult.
  */
-//todo
--(OnyxConfigurationBuilder*(^)(bool))setShouldConvertToISOTemplate;
+-(OnyxConfigurationBuilder*(^)(bool))setReturnISOFingerprintTemplate;
 
 /**
  * This method sets the rotation amount for the image.
