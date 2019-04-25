@@ -40,6 +40,10 @@
  */
 @property NSData *fingerprintTemplate;
 /*!
+ * @brief The ISO fingerprint template.
+ */
+@property NSData *ISOFingerprintTemplate;
+/*!
  * @brief The WSQ data for processed fingerprint.
  */
 @property NSData *WSQ;
