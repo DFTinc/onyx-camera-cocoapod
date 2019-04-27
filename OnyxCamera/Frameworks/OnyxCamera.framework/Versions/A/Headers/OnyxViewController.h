@@ -115,6 +115,8 @@
 
 @property int frameCount;
 
+@property bool isProcessingManualCapture;
+
 /*!
  * Set capturePreview to true
  * @author Devan Buggay
