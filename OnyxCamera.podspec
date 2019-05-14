@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name                    = 'OnyxCamera'
-  s.version                 = '5.4.2'
+  s.version                 = '5.4.3'
   s.summary                 = 'Onyx SDK CocoaPod for iOS.'
   s.description             = 'Onyx software development kit for iOS distributed via CocoaPods'
   s.homepage                = 'https://github.com/DFTinc/onyx-camera-cocoapod'
