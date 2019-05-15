@@ -121,6 +121,11 @@
 -(OnyxConfigurationBuilder*(^)(bool))setUseFlash;
 
 /**
+ * THis method set the LED Brightness
+ */
+-(OnyxConfigurationBuilder*(^)(float))setLEDBrightness;
+
+/**
  * This method sets the capture mode on (true) or off (false)
  */
 -(OnyxConfigurationBuilder*(^)(bool))setUseManualCapture;

@@ -151,6 +151,11 @@
 @property bool useFlash;
 
 /**
+ * This method sets the flash brightness level
+ */
+@property float LEDBrightness;
+
+/**
  * This method sets the orientation of the reticle {@link Reticle.Orientation}
  */
 @property ReticleOrientation reticleOrientation;
