@@ -89,7 +89,7 @@
 /*!
  * @brief Option to change LED brightness for camera
  */
-@property float LEDBrightness; // (0.0, 1.0]
+//@property float LEDBrightness; // (0.0, 1.0]
 
 /*!
  * @brief Option 
