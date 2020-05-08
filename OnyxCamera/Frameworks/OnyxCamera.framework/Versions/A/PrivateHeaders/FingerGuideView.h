@@ -7,14 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-
-typedef NSInteger FingerState;
+#import "CaptureNetOutputs.h"
 
 /**
  Class that represents a guide view used to help 
  user's properly position their finger in the camera's view.
  */
-@interface FingerGuideView : UIView
+@interface FingerGuideView : UIView {
+    UIImageView *tooCloseImageView;
+    UIImageView *tooFarImageView;
+    UIImageView *captureImageView;
+    UIImageView *logoImageView;
+    
+}
 
 @property (nonatomic) CGRect frame;
 
@@ -22,7 +27,10 @@ typedef NSInteger FingerState;
  Color of the guide geometry.
  */
 @property (nonatomic,strong) UIColor *color;
-@property FingerState fingerState;
+@property Side side;
+@property Side defaultSide;
+@property Together togetherness;
+@property Depth depth;
 @property float height;
 @property float offset;
 
