@@ -7,7 +7,7 @@
 namespace dft
 {
 
-double focusMeasureImpl(const cv::Mat& src, const Finger& finger);
+double focusMeasureImpl(const cv::Mat& src, const cv::Mat& fingerMask);
 
 }
 
