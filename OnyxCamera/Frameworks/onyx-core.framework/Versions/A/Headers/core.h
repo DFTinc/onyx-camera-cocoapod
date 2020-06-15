@@ -22,10 +22,9 @@ namespace dft
 /// \param[out] dst an 8-bit grayscale preprocessed fingerprint image.
 /// \param[in] sigma1 amount of blur for the mean calculation (default = 2)
 /// \param[in] sigma2 amount of blur for the standard deviation (default = 1)
-/// \return an image quality measure, a value greater than or equal to 60 is good.
 /// \throws DftException if an error occurs.
 /// \see generateFingerprintTemplate
-double preprocessFingerprint(const cv::Mat& src, cv::Mat& dst, double sigma1 = 2.0, double sigma2 = 1.0);
+void preprocessFingerprint(const cv::Mat& src, cv::Mat& dst, double sigma1 = 2.0, double sigma2 = 1.0);
 
 /// This function enhances a fingerprint image for use with generateFingerprintTemplate.
 /// \param[in] src an 8-bit grayscale image that has been preprocessed first.
@@ -91,51 +90,21 @@ MatchResult identify(const std::vector<FingerprintTemplate>& gallery, const Fing
 /// \see MatchResult
 MatchResult pyramidIdentify(const std::vector<FingerprintTemplate>& gallery, const cv::Mat& probe, const std::vector<double>& scales = std::vector<double>());
 
-/// This member locates a fingertip in a grayscale image.
-/// \param[in] src the 8-bit grayscale image possibly containing a finger.
-/// \param[in] detectMode 0 means dead finger mode, 1 means alive finger mode.
-/// \return a Finger object containing the location of the finger as well as its contour.
+/// This function locates fingers in a CaptureNet output mask.
+/// \param[in] src the 8-bit mask image provided by CaptureNet
+/// \param[out] fingerMask cleaned version of input mask
+/// \return an array of detected Finger locations
 /// \throws DftException if an error occurs.
-Finger findFinger(const cv::Mat& src, int detectMode = 1);
+/// \see Finger
+std::vector<Finger> findFingers(const cv::Mat &src, cv::Mat &fingerMask);
 
 /// This member function analyzes the fingertip focus.
 /// \param[in] src the 8-bit grayscale image to analyze for focus.
-/// \param[in] finger a Finger object describing the detected finger.
-/// \return a focus measure from [0, 1]. 0 being the worst and 1 being the best.
+/// \param[in] fingerMask cleaned mask output from findFingers.
+/// \return a focus measure greater than 1 means in focus, less than 1 means out of focus.
 /// \throws DftException if an error occurs.
 /// \see findFinger
-double focusMeasure(const cv::Mat& src, const Finger& finger);
-
-
-/// This member function segments the finger from the background.
-/// \param[in] src the color image to segment
-/// \param[out] dst the color image segmented image.
-/// \param[out] fingerMask the binary mask used to segment the finger.
-/// \throws DftException if an error occurs.
-void segmentFinger(const cv::Mat& src, cv::Mat& dst, cv::Mat& fingerMask, const cv::Size& kernelSize = cv::Size(5, 5));
-
-/// This member function segments the finger from the background.
-/// \param[in] yuvCamera2 the YUV_420_888 Camera2 image to process.
-/// \param[in] imageSize the image size.
-/// \param[in] yRowStride the row stride of the luminance.
-/// \param[in] yPixelStride the pixel stride of the luminance.
-/// \param[in] uvRowStride the row stride of the chrominance.
-/// \param[in] uvPixelStride the pixel stride of the chrominance.
-/// \return properly formatted byte array for OpenCV color conversion.
-std::vector<unsigned char> yuvCamera2ToYuvOcv(
-        const std::vector<unsigned char> &yuvCamera2,
-        const cv::Size &imageSize,
-        int yRowStride,
-        int yPixelStride,
-        int uvRowStride,
-        int uvPixelStride);
-
-/// This member function performs liveness detection on the given image
-/// \param[in] src the BGR image to classify
-/// \param[in] modelFile a file containing the Tensorflow neural network.
-/// \return Mat containing real confidence as first element, fake confidence as second element.
-void checkLiveness(const cv::Mat& src, const std::string& modelFile, cv::Mat& result);
-
+double focusMeasure(const cv::Mat& src, const cv::Mat& fingerMask);
 }
 
 

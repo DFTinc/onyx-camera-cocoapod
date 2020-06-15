@@ -8,100 +8,139 @@
 #ifndef FINGER_H_
 #define FINGER_H_
 
+#include <algorithm>
 #include <vector>
 
 #include <opencv2/core/core.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 
-namespace dft
-{
+namespace dft {
 
-typedef std::vector<cv::Point> Contour;
-typedef std::vector<Contour> ContourVector;
+    typedef std::vector<cv::Point> Contour;
+    typedef std::vector<Contour> ContourVector;
 
-typedef cv::Vec3f Circle;
-typedef std::vector<Circle> CircleVector;
+    /// This class defines the physical representation of the finger in an image.
+    class Finger {
+    public:
+        /// Constructs a default Finger object.
+        Finger()
+            : fingerEllipse(cv::Point2f(-1.0f, -1.0f), cv::Size2f(0.0f, 0.0f), 0.0f) {}
 
-/// This structure defines the POD for fill properties
-struct FillProperties
-{
-	double heightRatio;
-	double overlapRatio;
+        /// Constructs a Finger object from given contour and circle.
+        /// \param[in] fingerEllipse_ a RotatedRect specifying the Finger position, size, and orientation.
+        Finger(const cv::RotatedRect& fingerEllipse_)
+            : fingerEllipse(fingerEllipse_) {}
 
-	FillProperties()
-	: heightRatio(0.0), overlapRatio(0.0)
-	{}
-};
+        /// This member function determines if the Finger object is valid.
+        /// \return true if the Finger object is valid, otherwise false.
+        bool isValid() const {
+            return center().x >= 0.0f && center().y >= 0.0f && fingerEllipse.size.area() > 0;
+        }
 
-/// This class defines the physical representation of the finger in an image.
-class Finger
-{
-public:
-	/// Constructs a default Finger object.
-	Finger()
-	: circle(-1.0f, -1.0f, -1.0f)
-	{}
+        /// This member function returns the mask of the Finger region.
+        /// \param canvasSize the size of the canvas to draw the contour on.
+        /// \return the mask containing the contour.
+        cv::Mat getFingerMask(const cv::Size& canvasSize) const {
+            cv::Mat mask = cv::Mat::zeros(canvasSize, CV_8UC1);
+            cv::ellipse(mask, fingerEllipse, cv::Scalar(255, 255, 255), cv::FILLED);
 
-	/// Constructs a Finger object from given contour and circle.
-	/// \param[in] fingerContour a Contour specifying the points of the Finger.
-	/// \param[in] circle the Circle defining the tip region of the Finger.
-	Finger(const Contour& fingerContour, const Circle& circle)
-	: fingerContour(fingerContour), circle(circle)
-	{}
+            return mask;
+        }
 
-	Finger(const Finger& other)
-		: fingerContour(other.fingerContour), circle(other.circle)
-	{}
+        /// This member function returns the cropped mask of the bounded Finger region.
+        /// \param canvasSize the size of the canvas for clipping.
+        /// \return the mask containing the contour.
+        cv::Mat getBoundedFingerMask(const cv::Size& canvasSize) const {
+            cv::Rect clampedBounds = getClampedRect(canvasSize);
+            cv::Rect bounds = getRect();
+            cv::Point2f croppedCenter(
+                static_cast<float>(bounds.width) / 2.0f,
+                static_cast<float>(bounds.height) / 2.0f
+            );
 
-	/// This member function determines if the Finger object is valid.
-	/// \return true if the Finger object is valid, otherwise false.
-	bool isValid() const
-	{
-		return !fingerContour.empty() && tip().x >= 0.0f && tip().y >= 0.0f;
-	}
+            cv::RotatedRect croppedRect(croppedCenter, fingerEllipse.size, fingerEllipse.angle);
+            cv::Mat mask = cv::Mat::zeros(bounds.size(), CV_8UC1);
 
-	/// This member function returns the Contour defining the Finger region.
-	/// \return a Contour of the physical finger in the image.
-	Contour getFingerContour() const
-	{
-		return fingerContour;
-	}
+            cv::ellipse(mask, croppedRect, cv::Scalar(255, 255, 255), cv::FILLED);
 
-	/// This member function returns the mask of the Finger region.
-	/// \param canvasSize the size of the canvas to draw the contour on.
-	/// \return the mask containing the contour.
-	cv::Mat getFingerMask(const cv::Size& canvasSize) const
-	{
-		cv::Mat mask = cv::Mat::zeros(canvasSize, CV_8UC1);
-		cv::drawContours(mask, ContourVector(1, fingerContour), 0, cv::Scalar(255, 255, 255), CV_FILLED);
+            if(!rectsEqual(clampedBounds, bounds)) {
+                cv::Rect roi(
+                    clampedBounds.tl() - bounds.tl(),
+                    clampedBounds.size()
+                );
 
-		return mask;
-	}
+                mask = mask(roi).clone();
+            }
 
-	/// This member function returns the Circle encompassing the finger-tip region.
-	/// \return a circle defining the finger-tip region.
-	Circle getCircle() const
-	{
-		return circle;
-	}
+            return mask;
+        }
 
-	/// This member function returns the finger-tip (x,y) location.
-	/// \return the detected finger-tip location in (x,y) coordinates. (-1, -1) indicates no detection.
-	cv::Point2f tip() const
-	{
-		return cv::Point2f(circle[0], circle[1]);
-	}
+        /// This member function returns the axis-aligned bounding box (AABB) of the finger.
+        /// \return the finger's AABB.
+        cv::Rect getRect() const {
+            return fingerEllipse.boundingRect();
+        }
 
-	/// This member function returns the amount over over/under-fill the finger contour is filling the rectangle.
-	/// \return the FillProperties of the Finger relative to the capture rectangle.
-	/// \see FillProperties
-	FillProperties getFillProperties(const cv::Rect& r);
+        /// This member function returns the axis-aligned bounding box (AABB) of the finger.
+        /// \param canvasSize the size of the canvas for clipping.
+        /// \return the finger's AABB.
+        cv::Rect getClampedRect(const cv::Size& canvasSize) const {
+            cv::Rect bounds = fingerEllipse.boundingRect();
 
-private:
-	Contour fingerContour;
-	Circle circle;
-	cv::Rect fingerRect;
-};
+            return cv::Rect(
+                cv::Point(
+                    clamp<int>(bounds.x, 0, canvasSize.width),
+                    clamp<int>(bounds.y, 0, canvasSize.height)
+                ),
+                cv::Point(
+                    clamp<int>(bounds.x + bounds.width, 0, canvasSize.width),
+                    clamp<int>(bounds.y + bounds.height, 0, canvasSize.height)
+                )
+            );
+        }
+
+        /// This member function returns the orientation of the finger.
+        /// \return the angle of the finger in degrees.
+        float angle() const {
+            return fingerEllipse.angle;
+        }
+
+        /// This member function returns the size of the finger.
+        /// \return the size of the finger.
+        cv::Size2f size() const {
+            return fingerEllipse.size;
+        }
+
+        /// This member function returns the center of the finger-tip (x,y) location.
+        /// \return the detected finger-tip location in (x,y) coordinates. (-1, -1) indicates no detection.
+        cv::Point2f center() const {
+            return fingerEllipse.center;
+        }
+
+        /// This member function scales the Finger's parameters by a scale factor.
+        /// \param[in] scaleFactor amount to scale finger parameters by.
+        void scaleFinger(float scaleFactor) {
+            cv::RotatedRect scaledFingerEllipse(
+                fingerEllipse.center * scaleFactor,
+                cv::Size2f(fingerEllipse.size.width * scaleFactor, fingerEllipse.size.height * scaleFactor),
+                fingerEllipse.angle
+            );
+
+            fingerEllipse = scaledFingerEllipse;
+        }
+
+    private:
+        cv::RotatedRect fingerEllipse;
+
+        template <typename T>
+        T clamp(const T& value, const T& low, const T& high) const {
+            return value < low ? low : (value > high ? high : value);
+        }
+
+        bool rectsEqual(const cv::Rect& lhs, const cv::Rect& rhs) const {
+            return lhs.x == rhs.x && lhs.y == rhs.y && lhs.width == rhs.width && lhs.height == rhs.height;
+        }
+    };
 
 }
 

@@ -13,6 +13,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import "OnyxConfiguration.h"
+#import "CaptureNetController.h"
 
 #define fingerStepSize 15
 #define fingerStepPadding 10
@@ -35,7 +36,8 @@
     AVCaptureStillImageOutput *stillImageOutput;
     AVCaptureVideoDataOutput *captureOutput;
     dispatch_queue_t captureQueue;
-    ProcessedFingerprint *pf;
+    dispatch_queue_t captureNetQueue;
+    NSMutableArray *processedFingerprints;
     NSMutableArray *prints;
     CGRect camFrame;
     NSInteger stableFrames;
@@ -167,7 +169,7 @@
 #pragma mark - OnyxViewControllerDelegate
 // OnyxViewController Delegate methods
 @protocol OnyxViewControllerDelegate
-- (void) Onyx:(OnyxViewController *)controller didOutputProcessedFingerprint:(ProcessedFingerprint *)fingerprint fromSet:(NSArray *)fingerprints;
+- (void) Onyx:(OnyxViewController *)controller didOutputProcessedFingerprints:(NSMutableArray *)processedFingerprints;
 /*!
  * @return NSError
  */

@@ -186,7 +186,7 @@
 /**
  * This sets the OnyxSuccess event handler.
  */
--(OnyxConfigurationBuilder*(^)(void(^)(OnyxResult*)))setSuccessCallback;
+-(OnyxConfigurationBuilder*(^)(void(^)(NSMutableArray*)))setSuccessCallback;
 
 /**
  * This sets the ErrorCallback event handler.

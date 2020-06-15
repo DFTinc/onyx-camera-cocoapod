@@ -9,7 +9,7 @@
 namespace dft
 {
 
-Finger findFingerImpl(const cv::Mat& src, int detectMode = 1);
+std::vector<Finger> findFingersImpl(const cv::Mat &mask, cv::Mat &finger_mask);
 
 }
 
