@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.description             = 'Onyx software development kit for iOS distributed via CocoaPods'
   s.homepage                = 'https://github.com/DFTinc/onyx-camera-cocoapod'
   s.license                 = { :type => 'custom', :file => 'LICENSE' }
-  s.author                  = { 'mjwheatley' => 'mwheatley@diamondfortress.com' }
+  s.author                  = { 'mjwheatley' => 'mwheatley@diamondfortress.com', 'Jaroslav84' => 'yzheleznov@diamondfortress.com' }
   s.source                  = { :git => 'https://github.com/DFTinc/onyx-camera-cocoapod.git', :tag => s.version.to_s }
   s.ios.deployment_target   = '9.0'
   s.requires_arc            = true
