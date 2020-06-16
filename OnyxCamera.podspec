@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name                    = 'OnyxCamera'
-  s.version                 = '6.0.2'
+  s.version                 = '6.0.3'
   s.summary                 = 'Onyx SDK CocoaPod for iOS.'
   s.description             = 'Onyx software development kit for iOS distributed via CocoaPods'
   s.homepage                = 'https://github.com/DFTinc/onyx-camera-cocoapod'
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.requires_arc            = true
   s.xcconfig                = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
   s.pod_target_xcconfig     = { 'ENABLE_BITCODE' => 'NO', 'OTHER_LDFLAGS' => '-lObjC' }
-  #s.resource_bundles        = { 'OnyxCamera' => ['OnyxCamera/Assets/*.*'] }
+  s.resource_bundles        = { 'OnyxCamera' => ['OnyxCamera/Assets/*.*'] }
   s.ios.vendored_frameworks = 'OnyxCamera/Frameworks/*.framework'
   s.frameworks              = 'CoreMedia', 'AVFoundation', 'AssetsLibrary'
   s.dependency                'OpenCV', '~> 3.4'
