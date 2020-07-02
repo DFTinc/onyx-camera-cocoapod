@@ -14,6 +14,7 @@
 @property NfiqMetrics* nfiqMetrics;
 @property float focusQuality;
 @property float distanceToCenter;
+@property NSString* side;
 
 - (float) getLivenessConfidence;
 - (float) getFocusQuality;
