@@ -84,5 +84,8 @@
  * @brief image size for all returned images.
  */
 @property CGSize size;
-
+/*!
+ * @brief This returns the side detected, either left or right
+ */
+@property NSString* side;
 @end
