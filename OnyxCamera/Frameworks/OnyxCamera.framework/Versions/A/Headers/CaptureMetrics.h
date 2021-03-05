@@ -11,14 +11,13 @@
 
 @interface CaptureMetrics : NSObject
 @property float livenessConfidence;
-@property NfiqMetrics* nfiqMetrics;
+@property NSMutableArray* nfiqMetrics;
 @property float focusQuality;
 @property float distanceToCenter;
-@property NSString* side;
 
 - (float) getLivenessConfidence;
 - (float) getFocusQuality;
 - (float) getDistanceToCenter;
-- (NfiqMetrics*) getNfiqMetrics;
+- (NSMutableArray *) getNfiqMetrics;
 
 @end

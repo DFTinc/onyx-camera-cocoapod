@@ -34,7 +34,7 @@
  */
 @property OnyxConfiguration* onyxConfig;
 @property UIViewController* viewController;
-@property float livenessConfidence;
+@property OnyxResult* onyxResult;
 
 extern NSString * const IMAGE_URI_PREFIX;
 extern NSString * const ONYX_ICON_IMAGE_DATA;

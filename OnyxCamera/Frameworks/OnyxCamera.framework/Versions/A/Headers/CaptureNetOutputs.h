@@ -14,46 +14,14 @@ extern const int IMAGE_HEIGHT;
 extern const int IMAGE_DEPTH;
 extern const int OUTPUT_DEPTH;
 
-typedef enum Side : NSUInteger {
-    kSideBackground,
-    kLeft,
-    kRight
-} Side;
-
-typedef enum Together : NSUInteger {
-    kApart,
-    kTogetherBackground,
-    kTogether
-} Together;
-
-typedef enum Depth : NSUInteger {
-    kDepthBackground,
-    kCapture,
-    kTooClose,
-    kTooFar
-} Depth;
-
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CaptureNetOutputs : NSObject
 
-@property NSArray *sideOutputs;
-@property NSArray *togetherOutputs;
-@property NSArray *depthOutputs;
-
 @property NSData *maskData;
-@property NSDictionary *labels;
+@property NSData *markerData;
 
-- (instancetype)initWithOutputs:(NSArray *)side together:(NSArray *)together depth:(NSArray *)depth mask:(NSData *)mask labels:(NSDictionary *)labels;
-
-- (Side)getSide;
-- (NSString*)getSideString;
-- (Together)getTogetherness;
-- (NSString*)getTogethernessString;
-- (Depth)getDepth;
-- (NSString*)getDepthString;
-
--(NSString*)description;
+- (instancetype)initWithOutputs:(NSData *)mask marker:(NSData *)marker;
 
 @end
 

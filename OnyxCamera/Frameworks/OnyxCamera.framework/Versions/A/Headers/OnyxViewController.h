@@ -69,6 +69,11 @@
 }
 
 /*!
+ * @brief Holds the medianWidthEMA of a finger
+ */
+@property double medianWidthEMA;
+
+/*!
  * @brief The OnyxViewController's delegate
  */
 @property (strong, nonatomic) id delegate;
@@ -169,7 +174,7 @@
 #pragma mark - OnyxViewControllerDelegate
 // OnyxViewController Delegate methods
 @protocol OnyxViewControllerDelegate
-- (void) Onyx:(OnyxViewController *)controller didOutputProcessedFingerprints:(NSMutableArray *)processedFingerprints;
+- (void) Onyx:(OnyxViewController *)controller didOutputProcessedFingerprint:(NSMutableArray *)processedFingerprints;
 /*!
  * @return NSError
  */

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <TFLTensorFlowLite.h>
+#import "TFLTensorFlowLite.h"
 
 #import "CaptureNetOutputs.h"
 
