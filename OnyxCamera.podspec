@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name                    = 'OnyxCamera'
-  s.version                 = '6.0.5'
+  s.version                 = '6.12.1'
   s.summary                 = 'Onyx SDK CocoaPod for iOS.'
   s.description             = 'Onyx software development kit for iOS distributed via CocoaPods'
   s.homepage                = 'https://github.com/DFTinc/onyx-camera-cocoapod'
@@ -22,6 +22,6 @@ Pod::Spec.new do |s|
   s.resource_bundles        = { 'OnyxCamera' => ['OnyxCamera/Assets/*.*'] }
   s.ios.vendored_frameworks = 'OnyxCamera/Frameworks/*.framework'
   s.frameworks              = 'CoreMedia', 'AVFoundation', 'AssetsLibrary'
-  s.dependency                'OpenCV', '~> 3.4'
+  s.dependency                'OpenCV', '3.4.5'
   s.dependency                'TensorFlowLiteObjC'
 end

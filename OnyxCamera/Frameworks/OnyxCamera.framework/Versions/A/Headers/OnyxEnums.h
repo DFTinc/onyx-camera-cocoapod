@@ -70,7 +70,8 @@ typedef enum LayoutPreference {
 
 typedef enum ReticleOrientation {
     LEFT,
-    RIGHT
+    RIGHT,
+    THUMB_PORTRAIT
 } ReticleOrientation;
 
 typedef enum ImageRotation {
@@ -84,3 +85,10 @@ typedef enum FingerDetectMode {
     DEAD_FINGER,
     LIVE_FINGER
 } FingerDetectMode;
+
+typedef enum CaptureDepth : NSUInteger {
+    BACKGROUND,
+    CAPTURE,
+    TOO_CLOSE,
+    TOO_FAR
+} CaptureDepth;
