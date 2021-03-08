@@ -8,30 +8,33 @@
 
 #import <UIKit/UIKit.h>
 #import "CaptureNetOutputs.h"
+#import "OnyxConfiguration.h"
+#import "OnyxEnums.h"
 
 /**
  Class that represents a guide view used to help 
  user's properly position their finger in the camera's view.
  */
 @interface FingerGuideView : UIView {
-    UIImageView *tooCloseImageView;
-    UIImageView *tooFarImageView;
-    UIImageView *captureImageView;
-    UIImageView *logoImageView;
-    
+    UILabel *captureLabel;
+    UILabel *tooFarLabel;
+    UILabel *tooCloseLabel;
 }
 
 @property (nonatomic) CGRect frame;
+@property (assign) BOOL isAnimating;
 
 /** 
  Color of the guide geometry.
  */
 @property (nonatomic,strong) UIColor *color;
-@property Side side;
-@property Side defaultSide;
-@property Together togetherness;
-@property Depth depth;
+@property CaptureDepth captureDepth;
 @property float height;
 @property float offset;
+
+/*!
+ *@brief The FingerGuideView's OnyxConfiguration
+ */
+@property OnyxConfiguration *onyxConfig;
 
 @end

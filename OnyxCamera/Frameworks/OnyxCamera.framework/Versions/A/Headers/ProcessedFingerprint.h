@@ -64,11 +64,11 @@
  */
 @property float focusMeasure;
 /*!
- * @brief The nfiqscore of the WSQ file.
+ * @brief The nfiqscore of the fingerprint.
  */
 @property int nfiqscore;
 /*!
- * @brief The mlscore of the WSQ file.
+ * @brief The mlscore of the fingerprint.
  */
 @property float mlpscore;
 /*!
@@ -84,8 +84,5 @@
  * @brief image size for all returned images.
  */
 @property CGSize size;
-/*!
- * @brief This returns the side detected, either left or right
- */
-@property NSString* side;
+
 @end

@@ -51,6 +51,7 @@
     NSArray *steps;
     NSMutableArray *stepIndicatorViews;
     FingerGuideView *fingerGuideView;
+    UIImageView *logoImageView;
     UIView *fingertipView;
     UIView *imagePreview;
     UIImage *fingerImage;
@@ -67,6 +68,11 @@
     UIView *flash;
     UIActivityIndicatorView *activityIndicatorView;
 }
+
+/*!
+ * @brief Holds the medianWidthEMA of a finger
+ */
+@property double medianWidthEMA;
 
 /*!
  * @brief The OnyxViewController's delegate
@@ -169,7 +175,7 @@
 #pragma mark - OnyxViewControllerDelegate
 // OnyxViewController Delegate methods
 @protocol OnyxViewControllerDelegate
-- (void) Onyx:(OnyxViewController *)controller didOutputProcessedFingerprints:(NSMutableArray *)processedFingerprints;
+- (void) Onyx:(OnyxViewController *)controller didOutputProcessedFingerprint:(NSMutableArray *)processedFingerprints;
 /*!
  * @return NSError
  */

@@ -201,7 +201,7 @@
  * This sets the OnyxSuccess event handler.
  * successCallback (required) the event handler for the SuccessCallback.
  */
-@property void(^successCallback)(NSMutableArray* onyxResults);
+@property void(^successCallback)(OnyxResult* onyxResult);
 
 /**
  * This sets the ErrorCallback event handler.

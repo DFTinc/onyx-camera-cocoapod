@@ -11,38 +11,32 @@
 #import "CaptureMetrics.h"
 
 @interface OnyxResult : NSObject
-@property UIImage* grayRawFingerprintImage;
-@property UIImage* rawFingerprintImage;
-@property UIImage* processedFingerprintImage;
-@property UIImage* enhancedFingerprintImage;
-@property UIImage* blackWhiteProcessedFingerprintImage;
-@property NSData* wsqData;
-@property NSData* grayRawWsqData;
-@property NSData* fingerprintTemplate;
-@property NSData* ISOFingerprintTemplate;
+@property NSMutableArray* rawFingerprintImages;
+@property NSMutableArray* processedFingerprintImages;
+@property NSMutableArray* enhancedFingerprintImages;
+@property NSMutableArray* blackWhiteProcessedFingerprintImages;
+@property NSMutableArray* wsqData;
+@property NSMutableArray* fingerprintTemplates;
+@property NSMutableArray* ISOFingerprintTemplates;
 @property CaptureMetrics* captureMetrics;
 
-- (UIImage*) getGrayRawFingerprintImage;
+- (NSMutableArray*) getRawFingerprintImages;
 
-- (UIImage*) getRawFingerprintImage;
+- (NSMutableArray*) getProcessedFingerprintImages;
 
-- (UIImage*) getProcessedFingerprintImage;
+- (NSMutableArray*) getEnhancedFingerprintImages;
 
-- (UIImage*) getEnhancedFingerprintImage;
+- (NSMutableArray*) getBlackWhiteProcessedFingerprintImages;
 
-- (UIImage*) getBlackWhiteProcessedFingerprintImage;
+- (NSMutableArray*) getWsqData;
 
-- (NSData*) getWsqData;
+- (NSMutableArray*) getFingerprintTemplates;
 
-- (NSData*) getGrayRawWsqData;
-
-- (NSData*) getFingerprintTemplate;
-
-- (NSData*) getISOFingerprintTemplate;
+- (NSMutableArray*) getISOFingerprintTemplates;
 
 - (CaptureMetrics*) getMetrics;
 
-- (NSString*) getFingerprintImageUri:(UIImage*)image;
-- (NSString*) getBase64EncodedString:(NSData*)data;
+- (NSMutableArray*) getFingerprintImageUris:(NSMutableArray*)images;
+- (NSMutableArray*) getBase64EncodedStrings:(NSMutableArray*)data;
 
 @end
