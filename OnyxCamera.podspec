@@ -17,15 +17,12 @@ Pod::Spec.new do |s|
   s.source                  = { :git => 'https://github.com/DFTinc/onyx-camera-cocoapod.git', :tag => s.version.to_s }
   s.ios.deployment_target   = '9.0'
   s.requires_arc            = true
-  s.xcconfig                = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
-  s.pod_target_xcconfig     = { 'ENABLE_BITCODE' => 'NO', 'OTHER_LDFLAGS' => '-lObjC' }
+  s.xcconfig                = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.pod_target_xcconfig     = { 'ENABLE_BITCODE' => 'NO', 'OTHER_LDFLAGS' => '-lObjC', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.resource_bundles        = { 'OnyxCamera' => ['OnyxCamera/Assets/*.*'] }
   s.ios.vendored_frameworks = 'OnyxCamera/Frameworks/*.framework'
   s.frameworks              = 'CoreMedia', 'AVFoundation', 'AssetsLibrary'
   s.dependency                'OpenCV', '3.4.5'
   s.dependency                'TensorFlowLiteObjC'
-  s.pod_target_xcconfig = {
-      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-    }
-    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
