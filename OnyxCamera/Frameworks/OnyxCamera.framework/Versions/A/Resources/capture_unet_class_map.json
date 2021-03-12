@@ -1,5 +1,0 @@
-{
-  "side": ["background", "left", "right"],
-  "together": ["apart", "background", "together"],
-  "depth": ["background", "capture", "too close", "too far"]
-}
