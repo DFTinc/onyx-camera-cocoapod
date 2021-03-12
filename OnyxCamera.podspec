@@ -24,4 +24,8 @@ Pod::Spec.new do |s|
   s.frameworks              = 'CoreMedia', 'AVFoundation', 'AssetsLibrary'
   s.dependency                'OpenCV', '3.4.5'
   s.dependency                'TensorFlowLiteObjC'
+  s.pod_target_xcconfig = {
+      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+    }
+    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
