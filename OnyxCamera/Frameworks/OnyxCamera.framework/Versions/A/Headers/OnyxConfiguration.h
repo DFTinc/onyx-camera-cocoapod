@@ -53,6 +53,12 @@
 @property bool returnEnhancedFingerprintImage;
 
 /**
+ * This method sets whether or not to return a slap image. This contains all fingers captured
+ * within a single image as specified in the FBI EBTS
+ */
+@property bool returnSlapImage;
+
+/**
  * This property sets whether or not to return the black and white processed fingerprint image in the OnyxResult.
  */
 @property bool returnBlackWhiteProcessedFingerprintImage;
