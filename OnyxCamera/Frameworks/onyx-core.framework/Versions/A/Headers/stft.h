@@ -5,8 +5,7 @@
 #include <opencv2/core/core.hpp>
 #include <stdint.h>
 
-namespace dft
-{
+namespace dft {
 
 cv::Mat raisedCosine2d(uint32_t blockSize, uint32_t overlap);
 cv::Mat raisedCosine1d(uint32_t blockSize, uint32_t overlap);
@@ -23,9 +22,20 @@ cv::Mat computeCoherenceMap(const cv::Mat& orientationMap, int ksize);
 float computeCoherence(const cv::Mat& block, float theta);
 
 cv::Mat computeBandwidthMap(const cv::Mat& coherenceMap);
-cv::Mat lookupAngularFilter(float theta, float bandwidth, const std::vector<cv::Mat>& bankPi4, const std::vector<cv::Mat>& bankPi2);
+cv::Mat lookupAngularFilter(
+  float theta,
+  float bandwidth,
+  const std::vector<cv::Mat>& bankPi4,
+  const std::vector<cv::Mat>& bankPi2
+);
 
-void stftEnhance(const cv::Mat& src, cv::Mat& orientationMap, cv::Mat& frequencyMap, cv::Mat& energyMap, cv::Mat& enhancedImage);
+void stftEnhance(
+  const cv::Mat& src,
+  cv::Mat& orientationMap,
+  cv::Mat& frequencyMap,
+  cv::Mat& energyMap,
+  cv::Mat& enhancedImage
+);
 
 }
 

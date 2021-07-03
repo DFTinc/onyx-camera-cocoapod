@@ -8,22 +8,18 @@
 #ifndef MATCHRESULT_H_
 #define MATCHRESULT_H_
 
-namespace dft
-{
+namespace dft {
 
 /// This structure defines the data captured during an identification.
-struct MatchResult
-{
-	int index; //!< Stores the top matching index
-	float score; //!< Stores the top matching score
+struct MatchResult {
+  int index; //!< Stores the top matching index
+  float score; //!< Stores the top matching score
 
-	MatchResult()
-		: index(-1), score(0.0f)
-	{}
+  MatchResult()
+    : index(-1), score(0.0f) {}
 
-	MatchResult(int index, float score)
-		: index(index), score(score)
-	{}
+  MatchResult(int index, float score)
+    : index(index), score(score) {}
 };
 
 }

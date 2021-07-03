@@ -7,13 +7,15 @@
 namespace dft {
 
 std::vector<unsigned char> yuvCamera2ToYuvOcvImpl(
-        const std::vector<unsigned char> &yuvCamera2,
-        const cv::Size &imageSize,
-        int yRowStride,
-        int yPixelStride,
-        int uvRowStride,
-        int uvPixelStride);
+  const std::vector<unsigned char>& yuvCamera2,
+  const cv::Size& imageSize,
+  int yRowStride,
+  int yPixelStride,
+  int uvRowStride,
+  int uvPixelStride
+);
 
+cv::Mat fastRotate(const cv::Mat& src, int orientation);
 }
 
 #endif

@@ -4,8 +4,7 @@
 #include "dft/Finger.h"
 #include <opencv2/core/core.hpp>
 
-namespace dft
-{
+namespace dft {
 
 double focusMeasureImpl(const cv::Mat& src, const cv::Mat& fingerMask);
 

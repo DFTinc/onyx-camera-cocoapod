@@ -53,6 +53,11 @@
 -(OnyxConfigurationBuilder*(^)(bool))setReturnEnhancedImage;
 
 /**
+ * This method sets whether or not the capture task will return a slap image in the OnyxResult.
+ */
+-(OnyxConfigurationBuilder*(^)(bool))setReturnSlapImage;
+
+/**
  * This method sets whether or not to return imagery for the black and white processed fingerprint image in the OnyxResult.
  */
 -(OnyxConfigurationBuilder*(^)(bool))setReturnBlackWhiteProcessedImage;

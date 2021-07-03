@@ -14,6 +14,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "OnyxConfiguration.h"
 #import "CaptureNetController.h"
+#import "QualityNetController.h"
 
 #define fingerStepSize 15
 #define fingerStepPadding 10
@@ -37,6 +38,8 @@
     AVCaptureVideoDataOutput *captureOutput;
     dispatch_queue_t captureQueue;
     dispatch_queue_t captureNetQueue;
+    dispatch_queue_t qualityQueue;
+    dispatch_queue_t qualityNetQueue;
     NSMutableArray *processedFingerprints;
     NSMutableArray *prints;
     CGRect camFrame;
@@ -73,6 +76,11 @@
  * @brief Holds the medianWidthEMA of a finger
  */
 @property double medianWidthEMA;
+
+/*!
+ * @brief Holds the fingerQualityEMA of a finger
+ */
+@property double fingerQualityEMA;
 
 /*!
  * @brief The OnyxViewController's delegate

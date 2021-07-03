@@ -12,16 +12,14 @@
 #include <stdexcept>
 #include <string>
 
-namespace dft
-{
+namespace dft {
 
 /// \brief This class is the base exception class for the onyx-core SDK.
-class DftException : public std::runtime_error
-{
-public:
-	/// \brief This contructs a new DftException.
-	/// \see [std::runtime_error](http://www.cplusplus.com/reference/stdexcept/runtime_error/) for inherited methods.
-	DftException(const std::string& msg = "") : runtime_error(msg) {}
+class DftException : public std::runtime_error {
+ public:
+  /// \brief This contructs a new DftException.
+  /// \see [std::runtime_error](http://www.cplusplus.com/reference/stdexcept/runtime_error/) for inherited methods.
+  DftException(const std::string& msg = "") : runtime_error(msg) {}
 };
 
 }
