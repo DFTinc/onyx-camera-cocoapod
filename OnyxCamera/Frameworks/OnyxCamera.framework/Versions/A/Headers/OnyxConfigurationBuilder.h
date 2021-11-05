@@ -63,6 +63,19 @@
 -(OnyxConfigurationBuilder*(^)(bool))setReturnBlackWhiteProcessedImage;
 
 /**
+ * This method sets whether or not the capture task will return a full frame image in the OnyxResult.
+ */
+-(OnyxConfigurationBuilder*(^)(bool))setReturnFullFrameImage;
+
+/**
+ * This method sets the maximum height for the FullFrame image to be returned, so for example,
+ * if you want a 1920 height image returned, pass in 1080.0f for the value.  It will a full frame
+ * image resized to 1920 for the maximum height.  To get the original height of the full frame, to
+ * get full resolution, pass in a value of 1.0f.
+ */
+-(OnyxConfigurationBuilder*(^)(float))setFullFrameMaxImageHeight;
+
+/**
  * This method sets whether or not to return Onyx fingerprint template in the OnyxResult.
  */
 -(OnyxConfigurationBuilder*(^)(bool))setReturnFingerprintTemplate;

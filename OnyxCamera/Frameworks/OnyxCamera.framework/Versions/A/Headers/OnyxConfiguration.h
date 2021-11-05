@@ -59,6 +59,20 @@
 @property bool returnSlapImage;
 
 /**
+ * This method sets whether to return a FullFrame image.  This returns
+ * an image that is suitable for finger detection in a full frame.
+ */
+@property bool returnFullFrameImage;
+
+/**
+ * This method sets the maximum height for the FullFrame image to be returned, so for example,
+ * if you want a 1920 height image returned, pass in 1920.0f for the value.  It will a full frame
+ * image resized to 1920 for the maximum height.  To get the original height of the full frame, to
+ * get full resolution, pass in a value of 1.0f.
+ */
+@property float fullFrameMaxImageHeight;
+
+/**
  * This property sets whether or not to return the black and white processed fingerprint image in the OnyxResult.
  */
 @property bool returnBlackWhiteProcessedFingerprintImage;

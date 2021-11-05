@@ -183,7 +183,8 @@
 #pragma mark - OnyxViewControllerDelegate
 // OnyxViewController Delegate methods
 @protocol OnyxViewControllerDelegate
-- (void) Onyx:(OnyxViewController *)controller didOutputProcessedFingerprint:(NSMutableArray *)processedFingerprints;
+- (void) Onyx:(OnyxViewController *)controller didOutputProcessedFingerprint:(NSMutableArray *)processedFingerprints
+    withFullFrame:(UIImage*) fullResImage;
 /*!
  * @return NSError
  */

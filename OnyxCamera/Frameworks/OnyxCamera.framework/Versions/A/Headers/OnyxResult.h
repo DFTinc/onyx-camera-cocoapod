@@ -15,6 +15,7 @@
 @property NSMutableArray* processedFingerprintImages;
 @property NSMutableArray* enhancedFingerprintImages;
 @property NSMutableArray* blackWhiteProcessedFingerprintImages;
+@property UIImage* fullFrameImage;
 @property NSMutableArray* wsqData;
 @property NSMutableArray* fingerprintTemplates;
 @property NSMutableArray* ISOFingerprintTemplates;

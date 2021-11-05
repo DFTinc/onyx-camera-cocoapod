@@ -49,4 +49,5 @@ extern NSString * const IMAGE_URI_PREFIX;
 @protocol OnyxDelegate
 - (void) Onyx:(Onyx *)controller successCallback:(NSData *)data;
 - (void) Onyx:(Onyx *)controller errorCallback:(NSError *)error;
+- (void) Onyx:(Onyx *)controller onCancel:(NSError *)error;
 @end
